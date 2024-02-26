@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert System</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>MEDICAL ASSISTANCE ALERT SYSTEM</h1>
+
+    <div class="login card"></div> 
+    <br>
+    <img src="{{ url_for('send_image', filename=image_name) }}">
+    <br>
+    <br>
+    {{ text }}
+    <a style="text-decoration: none; display: block; margin: 30px auto;" class="btn-output" href="/" role="button">Predict Another image</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Alert System</title>
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<h1>MEDICAL ASSISTENCE ALERT SYSTEM</h1>
+
+<div class="login card"></div> 
+    <br>
+    <img src=" {{url_for('send_image', filename=image_name)}}">
+    <br>
+    <br>
+    {{text}}
+    <a style="text-decoration: none; display: block;  margin:30px auto;"
+    class="btn-output" href="/" role="button">Predict Another image</a>
+    </div>
+
+
+<script>
+    var imageInput = document.getElementById("image-input");
+    imageInput.addEventListener("change",function(event){
+        if(event.target.files.length == 0){
+            return;
+        }
+    });    
+</script>
+</body>
+</html> -->
